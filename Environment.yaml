@@ -25,3 +25,5 @@ dependencies:
       - openl3
       - hydra-core
       - wandb
+      -torchaudio
+      -soundfile
