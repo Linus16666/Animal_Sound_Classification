@@ -102,10 +102,10 @@ def main():
     plt.xlabel("Sample Number")
     plt.ylabel("Sound Value")
     plt.title("Sound Values Captured")
-    plt.plot(range(len(sound_captured.sound_values)), sound_captured.sound_values)
+    plt.plot(range(len(sound_capture.sound_values)), sound_capture.sound_values)
     plt.show()
     return sound_captured
-"""
+"""ja 
 def main():
     sound_capture = sound_capturing(serial_port, 115200, num_samples, sound_values)
     sound_capture.read_and_print()
