@@ -10,8 +10,8 @@ from pathlib import Path
 
 
 
-def args():
-    p = argparse.ArgumentPasser(description="Train CRNN model on ESC-50 dataset")
+def parse_args():
+    p = argparse.ArgumentParser(description="Train CRNN model on ESC-50 dataset")
     p.add_argument("--data", type=Path, default=Path("data/ESC-50-master"))
     p.add_argument("--epochs", type=int, default=150)
     p.add_argument("--batch_size", type=int, default=16)
@@ -22,7 +22,7 @@ def args():
 
 
 def main():
-    args = args()
+    args = parse_args()
     device = torch.device(args.device)
     ds = Dataset(root_dir="data/ESC-50-master", folds=[1, 2, 3, 4], sample_rate=44100, n_mels=64)
     ds2 = Dataset(root_dir="data/ESC-50-master", folds=[5], sample_rate=44100, n_mels=64)
@@ -35,7 +35,7 @@ def main():
     optimizer = optim.Adam(model.parameters(), lr=args.lr)
     model.to(device)
     
-    for epoch in range(args.epochs) and accuracy < 0.95:
+    for epoch in range(args.epochs):
         model.train()
         total_loss = 0.0
         for x, y in tqdm(train_loader, desc=f"Epoch {epoch+1}/{args.epochs}"):
@@ -61,3 +61,10 @@ def main():
         accuracy = correct / len(val_loader.dataset)
         print(f"Validation Accuracy: {accuracy:.4f}")
         torch.save(model.state_dict(), f"model_epoch_{epoch+1}.pth")
+        if accuracy > 0.95:
+            print(f"High accuracy achieved: {accuracy:.4f}, saving model.")
+            torch.save(model.state_dict(), "best_model.pth")
+            exit
+        
+if __name__ == "__main__":
+    main()
