@@ -9,15 +9,6 @@ from tqdm import tqdm
 from pathlib import Path
 
 
-ds = Dataset(root_dir="data/ESC-50-master", folds=[1, 2, 3, 4], sample_rate=44100, n_mels=128)
-ds2 = Dataset(root_dir="data/ESC-50-master", folds=[5], sample_rate=44100, n_mels=128)
-
-train_loader = DataLoader(ds, batch_size=32, shuffle=True)
-val_loader = DataLoader(ds2, batch_size=32, shuffle=False)
-
-model = CRNN(n_mels=128, n_classes=50)  # Adjust n_classes as needed
-
-
 
 def args():
     p = argparse.ArgumentPasser(description="Train CRNN model on ESC-50 dataset")
@@ -33,13 +24,13 @@ def args():
 def main():
     args = args()
     device = torch.device(args.device)
-    ds = Dataset(root_dir="data/ESC-50-master", folds=[1, 2, 3, 4], sample_rate=44100, n_mels=128)
-    ds2 = Dataset(root_dir="data/ESC-50-master", folds=[5], sample_rate=44100, n_mels=128)
+    ds = Dataset(root_dir="data/ESC-50-master", folds=[1, 2, 3, 4], sample_rate=44100, n_mels=64)
+    ds2 = Dataset(root_dir="data/ESC-50-master", folds=[5], sample_rate=44100, n_mels=64)
 
     train_loader = DataLoader(ds, batch_size=args.batch_size, shuffle=True)
     val_loader = DataLoader(ds2, batch_size=args.batch_size, shuffle=False)
 
-    model = CRNN(n_mels=128, n_classes=50) 
+    model = CRNN(n_mels=64, n_classes=50) 
     criterion = nn.CrossEntropyLoss()
     optimizer = optim.Adam(model.parameters(), lr=args.lr)
     model.to(device)
@@ -56,7 +47,7 @@ def main():
             optimizer.step()
             total_loss += loss.item()*x.size(0)
         avg_loss = total_loss / len(train_loader.dataset)
-        print(f"Epoch {epich+1}/{args.epochs}, Loss: {avg_loss:.4f}")
+        print(f"Epoch {epoch+1}/{args.epochs}, Loss: {avg_loss:.4f}")
         
         
         model.eval()

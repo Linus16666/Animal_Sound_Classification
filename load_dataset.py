@@ -5,7 +5,7 @@ from torch.utils.data import Dataset
 import torchaudio
 
 class Dataset(Dataset):
-    def __init__(self, root_dir="data\ESC-50-master", folds=list[int], sample_rate=44100, n_mels=128):
+    def __init__(self, root_dir="data\ESC-50-master", folds=list[int], sample_rate=44100, n_mels=64):
         self.root_dir = root_dir
         self.audio_dir= os.path.join(self.root_dir, "audio")
         self.meta = pd.read_csv(os.path.join(self.root_dir, "meta\esc50.csv"))
