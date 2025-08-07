@@ -16,6 +16,13 @@ def parse_args():
     p.add_argument("--epochs", type=int, default=150)
     p.add_argument("--batch_size", type=int, default=16)
     p.add_argument("--learning_rate", type=float, default=1e-3)
+    p.add_argument("--conv1_channels", type=int, default=32)
+    p.add_argument("--conv2_channels", type=int, default=64)
+    p.add_argument("--conv_kernel1", type=int, default=3)
+    p.add_argument("--conv_kernel2", type=int, default=3)
+    p.add_argument("--rnn_hidden", type=int, default=128)
+    p.add_argument("--rnn_layers", type=int, default=2)
+    p.add_argument("--rnn_type", choices=["GRU", "LSTM"], default="GRU")
     p.add_argument("--device", type=str, default="cuda" if torch.cuda.is_available() else "cpu")
     return p.parse_args()
 
@@ -31,13 +38,28 @@ def main():
         "epochs": args.epochs,
         "batch_size": args.batch_size,
         "learning_rate": args.learning_rate,
+        "conv1_channels": args.conv1_channels,
+        "conv2_channels": args.conv2_channels,
+        "conv_kernel1": args.conv_kernel1,
+        "conv_kernel2": args.conv_kernel2,
+        "rnn_hidden": args.rnn_hidden,
+        "rnn_layers": args.rnn_layers,
+        "rnn_type": args.rnn_type,
     })
     config = wandb.config
 
     train_loader = DataLoader(ds, batch_size=config.batch_size, shuffle=True)
     val_loader = DataLoader(ds2, batch_size=config.batch_size, shuffle=False)
 
-    model = CRNN(n_mels=64, n_classes=50)
+    model = CRNN(
+        n_mels=64,
+        n_classes=50,
+        conv_channels=(config.conv1_channels, config.conv2_channels),
+        conv_kernels=(config.conv_kernel1, config.conv_kernel2),
+        rnn_hidden=config.rnn_hidden,
+        rnn_layers=config.rnn_layers,
+        rnn_type=config.rnn_type,
+    )
     criterion = nn.CrossEntropyLoss()
     optimizer = optim.Adam(model.parameters(), lr=config.learning_rate)
     model.to(device)
