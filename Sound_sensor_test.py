@@ -95,15 +95,17 @@ class sound_capturing:
 
 
 import time
-def main():
+def capture():
     sound_capture = sound_capturing(serial_port, 115200, num_samples, sound_values)
     sound_capture.capture_samples()
     sound_captured = sound_capture.sound_values.copy()
+    print("finished_caputre")
     plt.xlabel("Sample Number")
     plt.ylabel("Sound Value")
     plt.title("Sound Values Captured")
     plt.plot(range(len(sound_capture.sound_values)), sound_capture.sound_values)
     plt.show()
+    print("plot")
     return sound_captured
 """ja 
 def main():
