@@ -1,0 +1,33 @@
+{
+  "os": "Windows-10-10.0.26100-SP0",
+  "python": "CPython 3.10.18",
+  "startedAt": "2025-08-07T05:56:49.654900Z",
+  "args": [
+    "--batch_size=12",
+    "--epochs=103",
+    "--learning_rate=0.0019352971971721047"
+  ],
+  "program": "C:\\Users\\linus\\Animal_Sound_Classification\\Training.py",
+  "codePath": "Training.py",
+  "codePathLocal": "Training.py",
+  "git": {
+    "remote": "https://github.com/Linus16666/Animal_Sound_Classification",
+    "commit": "d807c7a22b16401fce2fd7b0073522ea373b0ad0"
+  },
+  "email": "harrypotter166at@gmail.com",
+  "root": "C:\\Users\\linus\\Animal_Sound_Classification",
+  "host": "Envy-von-Linus",
+  "executable": "C:\\Users\\linus\\miniconda3\\envs\\animal-sound-ml\\python.exe",
+  "cpu_count": 8,
+  "cpu_count_logical": 16,
+  "disk": {
+    "/": {
+      "total": "928784576512",
+      "used": "421096210432"
+    }
+  },
+  "memory": {
+    "total": "16441667584"
+  },
+  "writerId": "x7pvbcrhshuwq9uqvzz0kf8p5ccffuwh"
+}

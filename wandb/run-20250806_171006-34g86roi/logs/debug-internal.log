@@ -1,0 +1,295 @@
+{"time":"2025-08-06T17:10:07.6225361+02:00","level":"INFO","msg":"stream: starting","core version":"0.21.0"}
+{"time":"2025-08-06T17:10:08.1882787+02:00","level":"INFO","msg":"stream: created new stream","id":"34g86roi"}
+{"time":"2025-08-06T17:10:08.1882787+02:00","level":"INFO","msg":"stream: started","id":"34g86roi"}
+{"time":"2025-08-06T17:10:08.1882787+02:00","level":"INFO","msg":"sender: started","stream_id":"34g86roi"}
+{"time":"2025-08-06T17:10:08.1882787+02:00","level":"INFO","msg":"handler: started","stream_id":"34g86roi"}
+{"time":"2025-08-06T17:10:08.1882787+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"34g86roi"}
+{"time":"2025-08-06T17:10:23.5703527+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-06T17:10:38.5698716+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-06T17:10:53.5738575+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-06T17:11:08.5733985+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-06T17:11:23.5708879+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-06T17:11:38.5710469+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-06T17:11:53.5738765+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-06T17:12:08.5763615+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-06T17:12:23.6003916+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-06T17:12:38.5922892+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-06T17:12:44.9782885+02:00","level":"WARN","msg":"handler: ignoring partial history record","step":1,"current":2}
+{"time":"2025-08-06T17:12:45.1387155+02:00","level":"WARN","msg":"handler: ignoring partial history record","step":1,"current":2}
+{"time":"2025-08-06T17:12:45.1392235+02:00","level":"WARN","msg":"handler: ignoring partial history record","step":1,"current":2}
+{"time":"2025-08-06T17:12:53.598932+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-06T17:13:08.5672145+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-06T17:13:23.5932986+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-06T17:13:38.5731439+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-06T17:13:53.5765524+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-06T17:14:08.5677227+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-06T17:14:23.571057+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-06T17:14:38.6005215+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-06T17:14:53.5724331+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-06T17:14:53.9017121+02:00","level":"WARN","msg":"handler: ignoring partial history record","step":2,"current":4}
+{"time":"2025-08-06T17:14:54.059579+02:00","level":"WARN","msg":"handler: ignoring partial history record","step":2,"current":4}
+{"time":"2025-08-06T17:14:54.0600854+02:00","level":"WARN","msg":"handler: ignoring partial history record","step":2,"current":4}
+{"time":"2025-08-06T17:15:08.5677825+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-06T17:15:23.5756751+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-06T17:15:38.6009091+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-06T17:15:53.5807815+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-06T17:16:08.5716132+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-06T17:16:23.5674439+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-06T17:16:38.5894559+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-06T17:16:53.5776871+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-06T17:17:01.8185269+02:00","level":"WARN","msg":"handler: ignoring partial history record","step":3,"current":6}
+{"time":"2025-08-06T17:17:01.9317297+02:00","level":"WARN","msg":"handler: ignoring partial history record","step":3,"current":6}
+{"time":"2025-08-06T17:17:01.9317297+02:00","level":"WARN","msg":"handler: ignoring partial history record","step":3,"current":6}
+{"time":"2025-08-06T18:10:32.5626672+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/linus1666-silicon-austria/animal_sound_classification/34g86roi/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-08-06T18:10:32.7395091+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-06T18:10:35.6577597+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": read tcp 10.0.0.125:64479->35.186.228.49:443: wsarecv: An existing connection was forcibly closed by the remote host."}
+{"time":"2025-08-06T18:10:38.6360624+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-06T18:10:53.5917647+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-06T18:11:08.5761527+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-06T18:11:23.6169479+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-06T18:11:38.5735+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-06T18:11:53.5705785+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-06T18:12:08.569212+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-06T18:12:23.5691057+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-06T18:12:38.5911836+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-06T18:12:51.9942334+02:00","level":"WARN","msg":"handler: ignoring partial history record","step":4,"current":8}
+{"time":"2025-08-06T18:12:52.1278284+02:00","level":"WARN","msg":"handler: ignoring partial history record","step":4,"current":8}
+{"time":"2025-08-06T18:12:52.128587+02:00","level":"WARN","msg":"handler: ignoring partial history record","step":4,"current":8}
+{"time":"2025-08-06T18:12:53.5890177+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-06T18:13:08.5752434+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-06T18:13:23.6040534+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-06T18:13:38.615573+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-06T18:13:53.5672163+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-06T18:14:08.5681492+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-06T18:14:23.600575+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-06T18:14:38.5672649+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-06T18:14:53.5675608+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-06T18:14:54.4127441+02:00","level":"WARN","msg":"handler: ignoring partial history record","step":5,"current":10}
+{"time":"2025-08-06T18:14:54.5462858+02:00","level":"WARN","msg":"handler: ignoring partial history record","step":5,"current":10}
+{"time":"2025-08-06T18:14:54.5467893+02:00","level":"WARN","msg":"handler: ignoring partial history record","step":5,"current":10}
+{"time":"2025-08-06T18:15:08.5668282+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-06T18:15:23.5745492+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-06T18:15:38.5861022+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-06T18:15:53.5682098+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-06T18:16:08.5691651+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-06T18:16:23.5786349+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-06T18:16:38.6029114+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-06T18:16:53.5814388+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-06T18:16:57.0162224+02:00","level":"WARN","msg":"handler: ignoring partial history record","step":6,"current":12}
+{"time":"2025-08-06T18:16:57.1251665+02:00","level":"WARN","msg":"handler: ignoring partial history record","step":6,"current":12}
+{"time":"2025-08-06T18:16:57.1251665+02:00","level":"WARN","msg":"handler: ignoring partial history record","step":6,"current":12}
+{"time":"2025-08-06T18:17:08.566824+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-06T18:17:23.5677838+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-06T18:17:38.6331814+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-06T18:17:53.5686679+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-06T18:18:08.589413+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-06T18:18:23.5700477+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-06T18:18:38.5683711+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-06T18:18:53.5731078+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-06T18:19:08.5911377+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-06T18:19:09.7359552+02:00","level":"WARN","msg":"handler: ignoring partial history record","step":7,"current":14}
+{"time":"2025-08-06T18:19:09.8833735+02:00","level":"WARN","msg":"handler: ignoring partial history record","step":7,"current":14}
+{"time":"2025-08-06T18:19:09.8841067+02:00","level":"WARN","msg":"handler: ignoring partial history record","step":7,"current":14}
+{"time":"2025-08-06T18:19:23.5653794+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-06T18:19:38.5706677+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-06T18:19:53.5677241+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-06T18:20:08.5945236+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-06T18:20:23.5818479+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-06T18:20:38.5651541+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-06T18:20:53.5686592+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-06T18:21:08.5670066+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-06T18:21:17.2417364+02:00","level":"WARN","msg":"handler: ignoring partial history record","step":8,"current":16}
+{"time":"2025-08-06T18:21:17.3514899+02:00","level":"WARN","msg":"handler: ignoring partial history record","step":8,"current":16}
+{"time":"2025-08-06T18:21:17.3514899+02:00","level":"WARN","msg":"handler: ignoring partial history record","step":8,"current":16}
+{"time":"2025-08-06T18:21:23.5896908+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-06T18:21:38.5991163+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-06T18:21:53.5678223+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-06T18:22:08.6002237+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-06T18:22:23.5653138+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-06T18:22:38.5670475+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-06T21:14:41.2904606+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-06T21:14:53.5930437+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-06T21:15:08.572831+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-06T21:15:21.2287141+02:00","level":"WARN","msg":"handler: ignoring partial history record","step":9,"current":18}
+{"time":"2025-08-06T21:15:21.3902381+02:00","level":"WARN","msg":"handler: ignoring partial history record","step":9,"current":18}
+{"time":"2025-08-06T21:15:21.3912453+02:00","level":"WARN","msg":"handler: ignoring partial history record","step":9,"current":18}
+{"time":"2025-08-06T21:15:23.5747918+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-06T21:15:38.5712881+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-06T21:15:53.5697619+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-06T21:16:08.571867+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-06T21:16:23.5686958+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-06T21:16:38.5813729+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-06T21:16:53.6041237+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-06T21:17:08.5690649+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-06T21:17:23.5708136+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-06T21:17:25.4081192+02:00","level":"WARN","msg":"handler: ignoring partial history record","step":10,"current":20}
+{"time":"2025-08-06T21:17:25.5386792+02:00","level":"WARN","msg":"handler: ignoring partial history record","step":10,"current":20}
+{"time":"2025-08-06T21:17:25.5386792+02:00","level":"WARN","msg":"handler: ignoring partial history record","step":10,"current":20}
+{"time":"2025-08-06T21:17:38.5678785+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-06T21:17:53.5830869+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-06T21:18:08.6138635+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-06T21:18:23.5717631+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-06T21:18:38.5672941+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-06T21:18:53.5864668+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-06T21:19:08.5659222+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-06T21:19:23.56709+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-06T21:19:27.5492068+02:00","level":"WARN","msg":"handler: ignoring partial history record","step":11,"current":22}
+{"time":"2025-08-06T21:19:27.6826546+02:00","level":"WARN","msg":"handler: ignoring partial history record","step":11,"current":22}
+{"time":"2025-08-06T21:19:27.6826546+02:00","level":"WARN","msg":"handler: ignoring partial history record","step":11,"current":22}
+{"time":"2025-08-06T21:19:38.5720303+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-06T21:19:53.5713787+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-06T21:20:08.5658421+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-06T21:20:23.5693422+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-06T21:20:38.5677178+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-06T21:20:53.5703554+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-07T03:21:46.8068116+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-07T03:21:52.4607416+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": read tcp 10.0.0.125:1641->35.186.228.49:443: wsarecv: An existing connection was forcibly closed by the remote host."}
+{"time":"2025-08-07T03:21:53.5755353+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-07T03:22:08.5703344+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-07T03:22:18.9858029+02:00","level":"WARN","msg":"handler: ignoring partial history record","step":12,"current":24}
+{"time":"2025-08-07T03:22:19.1439533+02:00","level":"WARN","msg":"handler: ignoring partial history record","step":12,"current":24}
+{"time":"2025-08-07T03:22:19.144598+02:00","level":"WARN","msg":"handler: ignoring partial history record","step":12,"current":24}
+{"time":"2025-08-07T03:22:23.6035471+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-07T06:39:49.8140954+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-07T07:17:01.6954424+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-07T07:17:01.9367699+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/linus1666-silicon-austria/animal_sound_classification/34g86roi/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-08-07T07:17:04.3145356+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/linus1666-silicon-austria/animal_sound_classification/34g86roi/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-08-07T07:17:06.2796253+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-08-07T07:17:08.3048049+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-08-07T07:17:08.5762834+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-07T07:17:08.7534439+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/linus1666-silicon-austria/animal_sound_classification/34g86roi/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-08-07T07:17:13.1309386+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-08-07T07:17:18.3472387+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/linus1666-silicon-austria/animal_sound_classification/34g86roi/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-08-07T07:17:21.8250828+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-08-07T07:17:23.5748156+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-07T07:17:35.354319+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/linus1666-silicon-austria/animal_sound_classification/34g86roi/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-08-07T07:17:38.5751551+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-07T07:17:39.760133+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-08-07T07:17:53.5685786+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-07T07:18:08.5694556+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-07T07:18:23.5755312+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-07T07:18:38.5944349+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-07T07:18:53.5711879+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-07T07:19:08.5853974+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-07T07:19:11.4404366+02:00","level":"WARN","msg":"handler: ignoring partial history record","step":13,"current":26}
+{"time":"2025-08-07T07:19:11.5956861+02:00","level":"WARN","msg":"handler: ignoring partial history record","step":13,"current":26}
+{"time":"2025-08-07T07:19:11.5961965+02:00","level":"WARN","msg":"handler: ignoring partial history record","step":13,"current":26}
+{"time":"2025-08-07T07:19:23.5667955+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-07T07:19:38.5657495+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-07T07:19:53.6269898+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-07T07:20:08.5828654+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-07T07:20:23.5693106+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-07T07:20:38.5674284+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-07T07:20:53.5669524+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-07T07:21:08.5642362+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-07T07:21:23.5650187+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-07T07:21:27.4136745+02:00","level":"WARN","msg":"handler: ignoring partial history record","step":14,"current":28}
+{"time":"2025-08-07T07:21:27.5549877+02:00","level":"WARN","msg":"handler: ignoring partial history record","step":14,"current":28}
+{"time":"2025-08-07T07:21:27.5554962+02:00","level":"WARN","msg":"handler: ignoring partial history record","step":14,"current":28}
+{"time":"2025-08-07T07:21:38.5708164+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-07T07:21:53.5740443+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-07T07:22:08.5662806+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-07T07:22:23.5736115+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-07T07:22:38.594488+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-07T07:22:53.6144227+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-07T07:23:08.5734552+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-07T07:23:23.5728486+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-07T07:23:28.9493546+02:00","level":"WARN","msg":"handler: ignoring partial history record","step":15,"current":30}
+{"time":"2025-08-07T07:23:29.0862586+02:00","level":"WARN","msg":"handler: ignoring partial history record","step":15,"current":30}
+{"time":"2025-08-07T07:23:29.0867655+02:00","level":"WARN","msg":"handler: ignoring partial history record","step":15,"current":30}
+{"time":"2025-08-07T07:23:38.5867882+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-07T07:23:53.5659022+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-07T07:24:08.5896694+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-07T07:24:23.5660172+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-07T07:24:38.5684821+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-07T07:24:53.5670977+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-07T07:25:08.6113081+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-07T07:25:21.5657371+02:00","level":"WARN","msg":"handler: ignoring partial history record","step":16,"current":32}
+{"time":"2025-08-07T07:25:21.7002848+02:00","level":"WARN","msg":"handler: ignoring partial history record","step":16,"current":32}
+{"time":"2025-08-07T07:25:21.7010043+02:00","level":"WARN","msg":"handler: ignoring partial history record","step":16,"current":32}
+{"time":"2025-08-07T07:25:23.5799525+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-07T07:25:38.5841482+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-07T07:25:53.5690851+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-07T07:26:08.581393+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-07T07:26:23.5704181+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-07T07:26:38.5683085+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-07T07:42:52.6938081+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-07T07:42:52.7838832+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/linus1666-silicon-austria/animal_sound_classification/34g86roi/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-08-07T07:42:53.7326624+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-07T07:42:56.0081041+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/linus1666-silicon-austria/animal_sound_classification/34g86roi/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-08-07T07:42:59.6144296+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-08-07T07:43:00.5059934+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/linus1666-silicon-austria/animal_sound_classification/34g86roi/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-08-07T07:43:01.7323095+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-08-07T07:43:06.1409022+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-08-07T07:43:08.5671081+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-07T07:43:09.2520009+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/linus1666-silicon-austria/animal_sound_classification/34g86roi/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-08-07T07:43:14.9583275+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-08-07T07:43:23.5841305+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-07T07:43:31.0907803+02:00","level":"WARN","msg":"handler: ignoring partial history record","step":17,"current":34}
+{"time":"2025-08-07T07:43:31.2376395+02:00","level":"WARN","msg":"handler: ignoring partial history record","step":17,"current":34}
+{"time":"2025-08-07T07:43:31.238488+02:00","level":"WARN","msg":"handler: ignoring partial history record","step":17,"current":34}
+{"time":"2025-08-07T07:43:38.571838+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-07T07:43:53.6214625+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-07T07:44:08.570458+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-07T07:44:23.574334+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-07T07:44:38.5709172+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-07T07:44:53.5677518+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-07T07:45:08.5661999+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-07T07:45:23.5720973+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-07T07:45:27.6398385+02:00","level":"WARN","msg":"handler: ignoring partial history record","step":18,"current":36}
+{"time":"2025-08-07T07:45:27.7569973+02:00","level":"WARN","msg":"handler: ignoring partial history record","step":18,"current":36}
+{"time":"2025-08-07T07:45:27.7569973+02:00","level":"WARN","msg":"handler: ignoring partial history record","step":18,"current":36}
+{"time":"2025-08-07T07:45:38.5662541+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-07T07:45:53.5865579+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-07T07:46:08.5666936+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-07T07:46:23.5672679+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-07T07:46:38.565338+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-07T07:46:53.5649026+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-07T07:47:08.5842081+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-07T07:47:19.3527552+02:00","level":"WARN","msg":"handler: ignoring partial history record","step":19,"current":38}
+{"time":"2025-08-07T07:47:19.4663987+02:00","level":"WARN","msg":"handler: ignoring partial history record","step":19,"current":38}
+{"time":"2025-08-07T07:47:19.4663987+02:00","level":"WARN","msg":"handler: ignoring partial history record","step":19,"current":38}
+{"time":"2025-08-07T07:47:23.5688344+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-07T07:47:38.5746544+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-07T07:47:53.5709029+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-07T07:48:08.5726081+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-07T07:48:23.5871223+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-07T07:48:38.5699976+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-07T07:48:53.5735434+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-07T07:49:08.5776942+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-07T07:49:23.5710758+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-07T07:49:34.0457082+02:00","level":"WARN","msg":"handler: ignoring partial history record","step":20,"current":40}
+{"time":"2025-08-07T07:49:34.1950048+02:00","level":"WARN","msg":"handler: ignoring partial history record","step":20,"current":40}
+{"time":"2025-08-07T07:49:34.1950048+02:00","level":"WARN","msg":"handler: ignoring partial history record","step":20,"current":40}
+{"time":"2025-08-07T07:49:38.566099+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-07T07:49:53.5741438+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-07T07:50:08.5687695+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-07T07:50:23.5675867+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-07T07:50:38.5969351+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-07T07:50:53.5799319+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-07T07:51:08.5970745+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-07T07:51:23.5923607+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-07T07:51:33.0576656+02:00","level":"WARN","msg":"handler: ignoring partial history record","step":21,"current":42}
+{"time":"2025-08-07T07:51:33.1748302+02:00","level":"WARN","msg":"handler: ignoring partial history record","step":21,"current":42}
+{"time":"2025-08-07T07:51:33.1748302+02:00","level":"WARN","msg":"handler: ignoring partial history record","step":21,"current":42}
+{"time":"2025-08-07T07:51:38.5701143+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-07T07:51:53.5718407+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-07T07:52:08.5817663+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-07T07:52:23.5955542+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-07T07:52:38.5690393+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-07T07:52:53.5791118+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-07T07:53:08.5726224+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-07T07:53:23.5714026+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-07T07:53:29.447435+02:00","level":"WARN","msg":"handler: ignoring partial history record","step":22,"current":44}
+{"time":"2025-08-07T07:53:29.5625893+02:00","level":"WARN","msg":"handler: ignoring partial history record","step":22,"current":44}
+{"time":"2025-08-07T07:53:29.5625893+02:00","level":"WARN","msg":"handler: ignoring partial history record","step":22,"current":44}
+{"time":"2025-08-07T07:53:38.566357+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-07T07:53:53.5879926+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-07T07:54:08.5693097+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-07T07:54:23.5853436+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-08-07T07:54:27.9236658+02:00","level":"INFO","msg":"stream: closing","id":"34g86roi"}
+{"time":"2025-08-07T07:54:28.9276485+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-08-07T07:54:29.3551731+02:00","level":"INFO","msg":"handler: closed","stream_id":"34g86roi"}
+{"time":"2025-08-07T07:54:29.3551731+02:00","level":"INFO","msg":"sender: closed","stream_id":"34g86roi"}
+{"time":"2025-08-07T07:54:29.3551731+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"34g86roi"}
+{"time":"2025-08-07T07:54:29.3556944+02:00","level":"INFO","msg":"stream: closed","id":"34g86roi"}
