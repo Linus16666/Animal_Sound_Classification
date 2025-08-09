@@ -9,6 +9,7 @@ import torch
 from torch.utils.data import Dataset
 import torchaudio
 import serial
+from model import CRNN
 
 #Initializing the sound capturing
 #have not changed n_fft and hop_length, will try it with these first
@@ -38,9 +39,20 @@ class Tranform:
         mel_db = self.amptodb(mel)
         self.mel_db = self.amptodb(mel)
         return mel_db
-    def model_predict():
-        
-        
+    def model_predict(self):
+        if torch.cuda.is_available():
+            device="cuda"
+        else:
+            device="cpu"
+        input=self.mel_db
+        input.unsqueeze(0)
+        input.to(device)
+        model=CRNN()
+        model.load_state_dict(torch.load("path", map_location=device))
+        with torch.no_grad():
+            output = model(input)
+            _, predicted = torch.max(output, 1)
+        return predicted
         
 def main():
     print("started_everything")
@@ -48,6 +60,8 @@ def main():
     print("sound captured")
     transform=Tranform(sound_caputred=sound_captured)
     mel_spectrogram = transform.process_and_print()
+    output=transform.model_predict()
+    print(output)
     plt.imshow(mel_spectrogram.squeeze().numpy(), origin='lower', aspect='auto')
     plt.title('Mel Spectrogram')
     plt.colorbar(format='%+2.0f dB')
