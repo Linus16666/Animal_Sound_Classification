@@ -22,7 +22,7 @@ def parse_args():
     p.add_argument("--conv_kernel2", type=int, default=3)
     p.add_argument("--rnn_hidden", type=int, default=128)
     p.add_argument("--rnn_layers", type=int, default=2)
-    p.add_argument("--rnn_type", choices=["GRU", "LSTM"], default="GRU")
+    p.add_argument("--rnn_type", choices=["GRU", "LSTM"], default="LSTM")
     p.add_argument("--device", type=str, default="cuda" if torch.cuda.is_available() else "cpu")
     return p.parse_args()
 
@@ -112,7 +112,7 @@ def main():
         wandb.log(log_data, step=epoch + 1)
         activations.clear()
 
-        torch.save(model.state_dict(), f"model_epoch_{epoch+1}.pth")
+        torch.save(model.state_dict(), f"/models/model_epoch_{epoch+1}.pth")
         if accuracy > 0.95:
             print(f"High accuracy achieved: {accuracy:.4f}, saving model.")
             torch.save(model.state_dict(), "best_model.pth")

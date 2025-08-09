@@ -12,7 +12,7 @@ class CRNN(torch.nn.Module):
         conv_kernels=(3, 3),
         rnn_hidden: int = 128,
         rnn_layers: int = 2,
-        rnn_type: str = "GRU",
+        rnn_type: str = "LSTM",
     ):
         super().__init__()
         k1, k2 = conv_kernels
