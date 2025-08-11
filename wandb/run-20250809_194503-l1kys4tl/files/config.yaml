@@ -1,0 +1,65 @@
+_wandb:
+    value:
+        cli_version: 0.21.0
+        e:
+            zgmyt72c5w43z8o5j6jq1txb8v41m7p3:
+                codePath: Training.py
+                codePathLocal: Training.py
+                cpu_count: 8
+                cpu_count_logical: 16
+                disk:
+                    /:
+                        total: "928784576512"
+                        used: "423256694784"
+                email: harrypotter166at@gmail.com
+                executable: C:\Users\linus\miniconda3\envs\animal-sound-ml\python.exe
+                git:
+                    commit: d3cc95ccff969ed93418721cf17b2fe3d8965427
+                    remote: https://github.com/Linus16666/Animal_Sound_Classification
+                host: Envy-von-Linus
+                memory:
+                    total: "16441667584"
+                os: Windows-10-10.0.26100-SP0
+                program: C:\Users\linus\Animal_Sound_Classification\Training.py
+                python: CPython 3.10.18
+                root: C:\Users\linus\Animal_Sound_Classification
+                startedAt: "2025-08-09T17:45:03.788190Z"
+                writerId: zgmyt72c5w43z8o5j6jq1txb8v41m7p3
+        m: []
+        python_version: 3.10.18
+        t:
+            "1":
+                - 1
+            "2":
+                - 1
+            "3":
+                - 1
+                - 2
+                - 16
+                - 61
+            "4": 3.10.18
+            "5": 0.21.0
+            "8":
+                - 3
+            "12": 0.21.0
+            "13": windows-amd64
+batch_size:
+    value: 16
+conv_kernel1:
+    value: 3
+conv_kernel2:
+    value: 3
+conv1_channels:
+    value: 32
+conv2_channels:
+    value: 64
+epochs:
+    value: 150
+learning_rate:
+    value: 0.001
+rnn_hidden:
+    value: 128
+rnn_layers:
+    value: 2
+rnn_type:
+    value: LSTM

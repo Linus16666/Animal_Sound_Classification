@@ -112,7 +112,7 @@ def main():
         wandb.log(log_data, step=epoch + 1)
         activations.clear()
 
-        torch.save(model.state_dict(), f"/models/model_epoch_{epoch+1}.pth")
+        torch.save(model.state_dict(), f"models/model_epoch_{epoch+1}.pth")
         if accuracy > 0.95:
             print(f"High accuracy achieved: {accuracy:.4f}, saving model.")
             torch.save(model.state_dict(), "best_model.pth")

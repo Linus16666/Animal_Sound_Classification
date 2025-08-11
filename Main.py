@@ -45,10 +45,12 @@ class Tranform:
         else:
             device="cpu"
         input=self.mel_db
-        input.unsqueeze(0)
+        input=input.unsqueeze(0)
+        input.to(dtype=torch.float32)
         input.to(device)
+        print(input.shape)
         model=CRNN()
-        model.load_state_dict(torch.load("path", map_location=device))
+        model.load_state_dict(torch.load("models/model_epoch_150.pth", map_location=device))
         with torch.no_grad():
             output = model(input)
             _, predicted = torch.max(output, 1)
