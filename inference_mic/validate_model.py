@@ -17,6 +17,7 @@ import numpy as np
 import torch
 import torchaudio
 import torchaudio.transforms as T
+import librosa
 
 # TFLite interpreter
 try:
@@ -52,11 +53,8 @@ T_FRAMES    = 431   # 5 s @ 44100 Hz / hop 512 ≈ 431
 
 def load_and_preprocess(wav_path: str) -> np.ndarray:
     """Load WAV, resample if needed, compute mel spectrogram → [1,1,64,431]."""
-    waveform, sr = torchaudio.load(wav_path)
-
-    # Mix to mono
-    if waveform.shape[0] > 1:
-        waveform = waveform.mean(dim=0, keepdim=True)
+    waveform_np, sr = librosa.load(wav_path, sr=None)
+    waveform = torch.from_numpy(waveform_np).unsqueeze(0)
 
     # Resample to 44100 if needed
     if sr != SAMPLE_RATE:

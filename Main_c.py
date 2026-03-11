@@ -92,17 +92,21 @@ class Tranform:
         )
         self.sound_captured=sound_caputred
     def process_and_print(self):
-        # Remove DC bias (~512 for GY-MAX4466), normalize to full int16 range
+        # Remove DC bias (~512 for GY-MAX4466), normalize to [-1, 1] range for transforms
         sound_array = np.array(self.sound_captured, dtype=np.float32)
         sound_array -= np.mean(sound_array)                   # center around zero
         max_val = np.max(np.abs(sound_array))
         if max_val > 0:
-            sound_array = sound_array / max_val * 32767.0     # scale to int16 range
-        sound_array = sound_array.astype(np.int16)
+            sound_array = sound_array / max_val               # scale to [-1, 1] for transforms
 
-        write(self.root_dir, self.sampling_r, sound_array)    # write at actual rate
+        # Write to file for record at actual rate
+        write_array = (sound_array * 32767.0).astype(np.int16)
+        write(self.root_dir, self.sampling_r, write_array)    
 
-        waveform, sr = torchaudio.load(self.root_dir)
+        # Convert to tensor directly instead of loading from disk
+        waveform = torch.from_numpy(sound_array).unsqueeze(0)
+        sr = self.sampling_r
+
         if sr != 44100:                                        # resample to match model
             waveform = torchaudio.transforms.Resample(sr, 44100)(waveform)
         mel = self.melspec(waveform)

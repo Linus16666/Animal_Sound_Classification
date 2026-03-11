@@ -3,6 +3,7 @@ import pandas as pd
 import torch
 from torch.utils.data import Dataset
 import torchaudio
+import librosa
 
 class Dataset(Dataset):
     def __init__(self, root_dir="data\ESC-50-master", folds=list[int], sample_rate=44100, n_mels=64):
@@ -27,9 +28,12 @@ class Dataset(Dataset):
     def __getitem__(self, idx):
         row=self.meta.iloc[idx]
         path = os.path.join(self.audio_dir, row["filename"])
-        waveform, sr = torchaudio.load(path)
+        # Using librosa to load audio instead of torchaudio.load
+        waveform_np, sr = librosa.load(path, sr=None)
+        waveform = torch.from_numpy(waveform_np).unsqueeze(0)
+        
         if sr != self.sample_rate:
-            waveform = torchaudio.transforms.Resample(waveform, sr, self.sample_rate)
+            waveform = torchaudio.transforms.Resample(sr, self.sample_rate)(waveform)
         mel = self.melspec(waveform)
         mel_db = self.amptodb(mel) #db_multiplier=10, amin=1e-10
         return mel_db, row["target"]
