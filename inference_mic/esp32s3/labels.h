@@ -1,0 +1,75 @@
+/* Auto-generated from Main.py ESC50_LABELS / ESC50_DISPLAY — do not edit. */
+#pragma once
+
+static const int NUM_CLASSES = 50;
+
+/* Full ESC-50 class names (for Serial debug output) */
+static const char * const ESC50_LABELS[50] = {
+    "dog",            "rooster",         "pig",             "cow",
+    "frog",           "cat",             "hen",             "insects",
+    "sheep",          "crow",            "rain",            "sea_waves",
+    "crackling_fire", "crickets",        "chirping_birds",  "water_drops",
+    "wind",           "pouring_water",   "toilet_flush",    "thunderstorm",
+    "crying_baby",    "sneezing",        "clapping",        "breathing",
+    "coughing",       "footsteps",       "laughing",        "brushing_teeth",
+    "snoring",        "drinking_sipping","door_wood_knock", "mouse_click",
+    "keyboard_typing","door_wood_creaks","can_opening",     "washing_machine",
+    "vacuum_cleaner", "clock_alarm",     "clock_tick",      "glass_breaking",
+    "helicopter",     "chainsaw",        "siren",           "car_horn",
+    "engine",         "train",           "church_bells",    "airplane",
+    "fireworks",      "hand_saw"
+};
+
+/* LCD-friendly display strings — max 16 chars, padded to exactly 16 with spaces */
+static const char * const ESC50_DISPLAY[50] = {
+    "Dog             ",
+    "Rooster         ",
+    "Pig             ",
+    "Cow             ",
+    "Frog            ",
+    "Cat             ",
+    "Hen             ",
+    "Insects         ",
+    "Sheep           ",
+    "Crow            ",
+    "Rain            ",
+    "Sea Waves       ",
+    "Crackling Fire  ",
+    "Crickets        ",
+    "Chirping Birds  ",
+    "Water Drops     ",
+    "Wind            ",
+    "Pouring Water   ",
+    "Toilet Flush    ",
+    "Thunderstorm    ",
+    "Crying Baby     ",
+    "Sneezing        ",
+    "Clapping        ",
+    "Breathing       ",
+    "Coughing        ",
+    "Footsteps       ",
+    "Laughing        ",
+    "Brushing Teeth  ",
+    "Snoring         ",
+    "Drinking        ",
+    "Door Knock      ",
+    "Mouse Click     ",
+    "Keyboard        ",
+    "Door Creak      ",
+    "Can Opening     ",
+    "Wash. Machine   ",
+    "Vacuum Cleaner  ",
+    "Clock Alarm     ",
+    "Clock Tick      ",
+    "Glass Breaking  ",
+    "Helicopter      ",
+    "Chainsaw        ",
+    "Siren           ",
+    "Car Horn        ",
+    "Engine          ",
+    "Train           ",
+    "Church Bells    ",
+    "Airplane        ",
+    "Fireworks       ",
+    "Hand Saw        "
+};

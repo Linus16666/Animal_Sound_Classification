@@ -6,7 +6,7 @@ from datetime import datetime
 
 
 try:
-    serial_port = serial.Serial('COM6', 115200, timeout=1)
+    serial_port = serial.Serial('/dev/ttyACM0', 115200, timeout=1)
 except serial.SerialException as e:
     print(f"Error opening serial port: {e}")
     sys.exit(1)
@@ -29,8 +29,10 @@ class sound_capturing:
         while len(self.sound_values) < self.num_samples:
             if self.serial_port.in_waiting > 0:
                 try:
-                    line = self.serial_port.readline().decode('utf-8').strip()
-                    if line:
+                    raw = self.serial_port.readline().decode('utf-8', errors='ignore')
+                    tokens = [t for t in raw.replace('\r', '\n').split('\n') if t.strip()]
+                    if tokens:
+                        line = tokens[0].strip()
                         sound_value = int(line)
                         self.sound_values.append(sound_value)
                 except ValueError as e:
@@ -40,23 +42,24 @@ class sound_capturing:
         return self.sound_values if self.sound_values else None
     
     def capture_samples(self):
-        if self.serial_port.in_waiting > 0:
-                    for _ in range(self.num_samples - len(self.sound_values)):
-                        try:
-                            line = self.serial_port.readline().decode('utf-8').strip()
-                            if line:
-                                sound_value = int(line)
-                                if sound_value < 10000 and sound_value > 200: #maybe delete?
-                                    self.sound_values.append(sound_value)
-                                else:
-                                    pass
-                                if len(self.sound_values) >= self.num_samples:
-                                    print("Collected enough sound values, returning")
-                                    print(len(self.sound_values))
-                                    #self.sound_values.pop(0)
-                        except ValueError as e:
-                            print(f"Error parsing sound value: {e}")
-                            pass
+        import time
+        self._capture_start = time.time()
+        while len(self.sound_values) < self.num_samples:
+            if self.serial_port.in_waiting > 0:
+                try:
+                    raw = self.serial_port.readline().decode('utf-8', errors='ignore')
+                    tokens = [t for t in raw.replace('\r', '\n').split('\n') if t.strip()]
+                    if tokens:
+                        sound_value = int(tokens[0].strip())
+                        if 0 <= sound_value <= 1023:   # valid 10-bit ADC range
+                            self.sound_values.append(sound_value)
+                except ValueError:
+                    pass
+        self._capture_end = time.time()
+
+    def get_actual_sample_rate(self):
+        elapsed = self._capture_end - self._capture_start
+        return int(round(len(self.sound_values) / elapsed)) if elapsed > 0 else 44100
     
     def stop(self):
         self.is_running = False
@@ -69,22 +72,17 @@ class sound_capturing:
             while self.is_running:
                 print("Starting sound capture...")
                 if self.serial_port.in_waiting > 0:
-                    for _ in range(self.num_samples - len(self.sound_values)):
-                        try:
-                            line = self.serial_port.readline().decode('utf-8').strip()
-                            if line:
-                                sound_value = int(line)
-                                if sound_value < 10000 and sound_value > 200:
-                                    self.sound_values.append(sound_value)
-                                else:
-                                    pass
-                                if len(self.sound_values) >= self.num_samples:
-                                    print("Collected enough sound values, returning")
-                                    print(len(self.sound_values))
-                                    #self.sound_values.pop(0)
-                        except ValueError as e:
-                            print(f"Error parsing sound value: {e}")
-                            pass
+                    try:
+                        raw = self.serial_port.readline().decode('utf-8', errors='ignore')
+                        tokens = [t for t in raw.replace('\r', '\n').split('\n') if t.strip()]
+                        if tokens:
+                            line = tokens[0].strip()
+                            sound_value = int(line)
+                            if 0 <= sound_value <= 1023:
+                                self.sound_values.append(sound_value)
+                    except ValueError as e:
+                        print(f"Error parsing sound value: {e}")
+                        pass
 
         thread = threading.Thread(target=read_loop)
         thread.daemon = True
@@ -96,11 +94,29 @@ class sound_capturing:
 
 import time
 def capture():
-    sound_capture = sound_capturing(serial_port, 115200, num_samples, sound_values)
+    # Tell Arduino to start sending ADC data (needed for repeat runs)
+    serial_port.write(b"START\n")
+    serial_port.flush()
+    sound_capture = sound_capturing(serial_port, 115200, num_samples)
     sound_capture.capture_samples()
     sound_captured = sound_capture.sound_values.copy()
-    print("finished_caputre")
-    return sound_captured
+    actual_rate = sound_capture.get_actual_sample_rate()
+    # Stop ADC data — this drains the TX buffer before Python does any processing,
+    # so the RESULT command sent later is received cleanly with no buffer backup.
+    serial_port.write(b"STOP\n")
+    serial_port.flush()
+    print(f"Captured {len(sound_captured)} samples at ~{actual_rate} Hz")
+    return sound_captured, actual_rate
+
+def send_label(display_text, confidence_pct):
+    """Send prediction result to Arduino LCD.
+    Sends two separate commands: L1: for row 0, L2: for row 1.
+    Arduino has stopped sending ADC data (STOP was sent after capture).
+    """
+    # Pad to 16 chars so any shorter text fully overwrites the previous row content
+    serial_port.write(f"L1:{display_text:<16}\n".encode('utf-8'))
+    serial_port.write(f"L2:{confidence_pct:.0f}%{'':<13}\n".encode('utf-8'))
+    serial_port.flush()
     """
     plt.xlabel("Sample Number")
     plt.ylabel("Sound Value")
